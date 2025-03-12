@@ -11,18 +11,12 @@ importers:
       '@nuxt/content':
         specifier: ^3.3.0
         version: 3.3.0(magicast@0.3.5)(typescript@5.8.2)
-      better-sqlite3:
-        specifier: 8.6.0
-        version: 8.6.0
+      '@nuxthq/studio':
+        specifier: ^2.2.1
+        version: 2.2.1(magicast@0.3.5)
       nuxt:
         specifier: ^3.16.0
-        version: 3.16.0(@parcel/watcher@2.5.1)(@types/node@22.13.10)(better-sqlite3@8.6.0)(db0@0.3.1(better-sqlite3@8.6.0))(ioredis@5.6.0)(magicast@0.3.5)(rollup@4.35.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
-      vue:
-        specifier: ^3.5.13
-        version: 3.5.13(typescript@5.8.2)
-      vue-router:
-        specifier: ^4.5.0
-        version: 4.5.0(vue@3.5.13(typescript@5.8.2))
+        version: 3.16.0(@parcel/watcher@2.5.1)(@types/node@22.13.10)(better-sqlite3@11.8.1)(db0@0.3.1(better-sqlite3@11.8.1))(ioredis@5.6.0)(magicast@0.3.5)(rollup@4.35.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
 
 packages:
 
@@ -130,6 +124,10 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
+
+  '@babel/standalone@7.26.10':
+    resolution: {integrity: sha512-AYXK0hLWfEaK9WAePJqs30qro09a8w7X3YZzjukqtLXreE7xBZYdi5EMrP87T4UrVqmQ9tIX6L6SeTu5LDh3zw==}
+    engines: {node: '>=6.9.0'}
 
   '@babel/template@7.26.9':
     resolution: {integrity: sha512-qyRplbeIpNZhmzOysF/wFMuP9sctmh2cFzRAZOn1YapxBsE1i9bJIY586R/WBLfLcmcBlM8ROBiQURnnNy+zfA==}
@@ -431,6 +429,9 @@ packages:
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0.0}
     peerDependencies:
       vue: ^3.3.4
+
+  '@nuxthq/studio@2.2.1':
+    resolution: {integrity: sha512-FiKaC2NBnoKbV5opW8+bXt75R9b7XQ/xtr2bCSLRUca2H7lYypfUAdpYltJasKMgJsUWMNHME92iW5Fi9gb+IA==}
 
   '@nuxtjs/mdc@0.15.0':
     resolution: {integrity: sha512-xdYEu+FmUZpKQzDS35peX9hF36oxvD4zx9lTJq6RPh/vgJuLSohUIUVLtNxM7m8cY/pTh41qaO3pOvKz0Xq3sg==}
@@ -1097,9 +1098,6 @@ packages:
   better-sqlite3@11.8.1:
     resolution: {integrity: sha512-9BxNaBkblMjhJW8sMRZxnxVTRgbRmssZW0Oxc1MPBTfiR+WW21e2Mk4qu8CzrcZb1LwPCnFsfDEzq+SNcBU8eg==}
 
-  better-sqlite3@8.6.0:
-    resolution: {integrity: sha512-jwAudeiTMTSyby+/SfbHDebShbmC2MCH8mU2+DXi0WJfv13ypEJm47cd3kljmy/H130CazEvkf2Li//ewcMJ1g==}
-
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
@@ -1726,8 +1724,14 @@ packages:
     resolution: {integrity: sha512-qc8h1KIQbJpp+241id3GuAtkdyJ+IK+LIVtkiFTRKRrmddDzs3SI9CvP1QYmWBFvm1I/PWRwj//of8bgAc0ltA==}
     engines: {node: '>=4'}
 
+  git-up@7.0.0:
+    resolution: {integrity: sha512-ONdIrbBCFusq1Oy0sC71F5azx8bVkvtZtMJAsv+a6lz5YAmbNnLD6HAB4gptHZVLPR8S2/kVN6Gab7lryq5+lQ==}
+
   git-up@8.0.1:
     resolution: {integrity: sha512-2XFu1uNZMSjkyetaF+8rqn6P0XqpMq/C+2ycjI6YwrIKcszZ5/WR4UubxjN0lILOKqLkLaHDaCr2B6fP1cke6g==}
+
+  git-url-parse@15.0.0:
+    resolution: {integrity: sha512-5reeBufLi+i4QD3ZFftcJs9jC26aULFLBU23FeKM/b1rI0K6ofIeAblmDVO7Ht22zTDE9+CkJ3ZVb0CgJmz3UQ==}
 
   git-url-parse@16.0.1:
     resolution: {integrity: sha512-mcD36GrhAzX5JVOsIO52qNpgRyFzYWRbU1VSRFCvJt1IJvqfvH427wWw/CFqkWvjVPtdG5VTx4MKUeC5GeFPDQ==}
@@ -2439,6 +2443,10 @@ packages:
     resolution: {integrity: sha512-iq7hbSnfp4Ff/PTMYBF8pYabTQuF3u7HVN66Kb3hOnrnaPEdXEn/q6HkAn5V8UjOVSgXYpvycM0wSnwyADYNVA==}
     hasBin: true
 
+  nuxt-component-meta@0.9.0:
+    resolution: {integrity: sha512-Zmuw/PxAeJkIu7EPZEFg0lIwnfpeiDsHog9i1g5d4Z3O5+00R1Vbuk+NC6K7kgpdLsdU2/XBvzc7oQ6BsXuQPg==}
+    hasBin: true
+
   nuxt@3.16.0:
     resolution: {integrity: sha512-4j2tuHo+kcComQ1WrCD+i1w3UFOHrcnNH30cwiEY/WZZlBZOlC6DtUm6aBjhfpBFaMYsF4PbyKsNW+7FHwckHA==}
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0.0}
@@ -2533,6 +2541,9 @@ packages:
 
   parse-path@7.0.1:
     resolution: {integrity: sha512-6ReLMptznuuOEzLoGEa+I1oWRSj2Zna5jLWC+l6zlfAI4dbbSaIES29ThzuPkbhNahT65dWzfoZEO6cfJw2Ksg==}
+
+  parse-url@8.1.0:
+    resolution: {integrity: sha512-xDvOoLU5XRrcOZvnI6b8zA6n9O9ejNk/GExuz1yBuWUGn9KA97GI6HTs6u02wKara1CeVmZhH+0TZFdWScR89w==}
 
   parse-url@9.2.0:
     resolution: {integrity: sha512-bCgsFI+GeGWPAvAiUv63ZorMeif3/U0zaXABGJbOWt5OH2KCaPHF6S+0ok4aqM9RuIPGyZdx9tR9l13PsW4AYQ==}
@@ -3386,6 +3397,10 @@ packages:
     resolution: {integrity: sha512-4luGP9LMYszMRZwsvyUd9MrxgEGZdZuZgpVQHEEX0lCYFESasVRvZd0EYpCkOIbJKHMuv0LskpXc/8Un+MJzEQ==}
     hasBin: true
 
+  untyped@1.5.2:
+    resolution: {integrity: sha512-eL/8PlhLcMmlMDtNPKhyyz9kEBDS3Uk4yMu/ewlkT2WFbtzScjHWPJLdQLmaGPUKjXzwe9MumOtOgc4Fro96Kg==}
+    hasBin: true
+
   untyped@2.0.0:
     resolution: {integrity: sha512-nwNCjxJTjNuLCgFr42fEak5OcLuB3ecca+9ksPFNvtfYSLpjf+iJqSIaSnIile6ZPbKYxI5k2AfXqeopGudK/g==}
     hasBin: true
@@ -3835,6 +3850,8 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.10)
     transitivePeerDependencies:
       - supports-color
+
+  '@babel/standalone@7.26.10': {}
 
   '@babel/template@7.26.9':
     dependencies:
@@ -4300,6 +4317,23 @@ snapshots:
       - vti
       - vue-tsc
       - yaml
+
+  '@nuxthq/studio@2.2.1(magicast@0.3.5)':
+    dependencies:
+      '@nuxt/kit': 3.16.0(magicast@0.3.5)
+      defu: 6.1.4
+      git-url-parse: 15.0.0
+      nuxt-component-meta: 0.9.0(magicast@0.3.5)
+      parse-git-config: 3.0.0
+      pkg-types: 1.3.1
+      socket.io-client: 4.8.1
+      ufo: 1.5.4
+      untyped: 1.5.2
+    transitivePeerDependencies:
+      - bufferutil
+      - magicast
+      - supports-color
+      - utf-8-validate
 
   '@nuxtjs/mdc@0.15.0(magicast@0.3.5)':
     dependencies:
@@ -4997,11 +5031,6 @@ snapshots:
       bindings: 1.5.0
       prebuild-install: 7.1.3
 
-  better-sqlite3@8.6.0:
-    dependencies:
-      bindings: 1.5.0
-      prebuild-install: 7.1.3
-
   bindings@1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
@@ -5284,10 +5313,6 @@ snapshots:
   db0@0.3.1(better-sqlite3@11.8.1):
     optionalDependencies:
       better-sqlite3: 11.8.1
-
-  db0@0.3.1(better-sqlite3@8.6.0):
-    optionalDependencies:
-      better-sqlite3: 8.6.0
 
   de-indent@1.0.2: {}
 
@@ -5613,10 +5638,19 @@ snapshots:
 
   git-config-path@2.0.0: {}
 
+  git-up@7.0.0:
+    dependencies:
+      is-ssh: 1.4.1
+      parse-url: 8.1.0
+
   git-up@8.0.1:
     dependencies:
       is-ssh: 1.4.1
       parse-url: 9.2.0
+
+  git-url-parse@15.0.0:
+    dependencies:
+      git-up: 7.0.0
 
   git-url-parse@16.0.1:
     dependencies:
@@ -6474,7 +6508,7 @@ snapshots:
 
   napi-build-utils@2.0.0: {}
 
-  nitropack@2.11.6(better-sqlite3@8.6.0)(typescript@5.8.2):
+  nitropack@2.11.6(better-sqlite3@11.8.1)(typescript@5.8.2):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@netlify/functions': 3.0.0
@@ -6497,7 +6531,7 @@ snapshots:
       cookie-es: 2.0.0
       croner: 9.0.0
       crossws: 0.3.4
-      db0: 0.3.1(better-sqlite3@8.6.0)
+      db0: 0.3.1(better-sqlite3@11.8.1)
       defu: 6.1.4
       destr: 2.0.3
       dot-prop: 9.0.0
@@ -6545,7 +6579,7 @@ snapshots:
       unenv: 2.0.0-rc.14
       unimport: 4.1.2
       unplugin-utils: 0.2.4
-      unstorage: 1.15.0(db0@0.3.1(better-sqlite3@8.6.0))(ioredis@5.6.0)
+      unstorage: 1.15.0(db0@0.3.1(better-sqlite3@11.8.1))(ioredis@5.6.0)
       untyped: 2.0.0
       unwasm: 0.3.9
       youch: 4.1.0-beta.6
@@ -6638,7 +6672,19 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  nuxt@3.16.0(@parcel/watcher@2.5.1)(@types/node@22.13.10)(better-sqlite3@8.6.0)(db0@0.3.1(better-sqlite3@8.6.0))(ioredis@5.6.0)(magicast@0.3.5)(rollup@4.35.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0):
+  nuxt-component-meta@0.9.0(magicast@0.3.5):
+    dependencies:
+      '@nuxt/kit': 3.16.0(magicast@0.3.5)
+      citty: 0.1.6
+      mlly: 1.7.4
+      scule: 1.3.0
+      typescript: 5.8.2
+      ufo: 1.5.4
+      vue-component-meta: 2.2.8(typescript@5.8.2)
+    transitivePeerDependencies:
+      - magicast
+
+  nuxt@3.16.0(@parcel/watcher@2.5.1)(@types/node@22.13.10)(better-sqlite3@11.8.1)(db0@0.3.1(better-sqlite3@11.8.1))(ioredis@5.6.0)(magicast@0.3.5)(rollup@4.35.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
       '@nuxt/cli': 3.22.5(magicast@0.3.5)
       '@nuxt/devalue': 2.0.2
@@ -6674,7 +6720,7 @@ snapshots:
       magic-string: 0.30.17
       mlly: 1.7.4
       nanotar: 0.2.0
-      nitropack: 2.11.6(better-sqlite3@8.6.0)(typescript@5.8.2)
+      nitropack: 2.11.6(better-sqlite3@11.8.1)(typescript@5.8.2)
       nypm: 0.6.0
       ofetch: 1.4.1
       ohash: 2.0.11
@@ -6697,7 +6743,7 @@ snapshots:
       unimport: 4.1.2
       unplugin: 2.2.0
       unplugin-vue-router: 0.12.0(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
-      unstorage: 1.15.0(db0@0.3.1(better-sqlite3@8.6.0))(ioredis@5.6.0)
+      unstorage: 1.15.0(db0@0.3.1(better-sqlite3@11.8.1))(ioredis@5.6.0)
       untyped: 2.0.0
       vue: 3.5.13(typescript@5.8.2)
       vue-bundle-renderer: 2.1.1
@@ -6879,6 +6925,10 @@ snapshots:
   parse-path@7.0.1:
     dependencies:
       protocols: 2.0.2
+
+  parse-url@8.1.0:
+    dependencies:
+      parse-path: 7.0.1
 
   parse-url@9.2.0:
     dependencies:
@@ -7820,7 +7870,7 @@ snapshots:
       acorn: 8.14.1
       webpack-virtual-modules: 0.6.2
 
-  unstorage@1.15.0(db0@0.3.1(better-sqlite3@8.6.0))(ioredis@5.6.0):
+  unstorage@1.15.0(db0@0.3.1(better-sqlite3@11.8.1))(ioredis@5.6.0):
     dependencies:
       anymatch: 3.1.3
       chokidar: 4.0.3
@@ -7831,7 +7881,7 @@ snapshots:
       ofetch: 1.4.1
       ufo: 1.5.4
     optionalDependencies:
-      db0: 0.3.1(better-sqlite3@8.6.0)
+      db0: 0.3.1(better-sqlite3@11.8.1)
       ioredis: 5.6.0
 
   untun@0.1.3:
@@ -7839,6 +7889,19 @@ snapshots:
       citty: 0.1.6
       consola: 3.4.0
       pathe: 1.1.2
+
+  untyped@1.5.2:
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/standalone': 7.26.10
+      '@babel/types': 7.26.10
+      citty: 0.1.6
+      defu: 6.1.4
+      jiti: 2.4.2
+      knitwork: 1.2.0
+      scule: 1.3.0
+    transitivePeerDependencies:
+      - supports-color
 
   untyped@2.0.0:
     dependencies:
