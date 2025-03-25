@@ -21,14 +21,6 @@ jobs:
       - name: Build
         run: npm run build 
 
-      - name: Clean node_modules and package-lock.json
-        run: |
-          rm -rf node_modules
-          rm package-lock.json
-
-      - name: Reinstall dependencies
-        run: npm install
-
       - name: Configure Git
         run: |
           git config --global user.email "github-actions@github.com"
@@ -37,5 +29,5 @@ jobs:
       - name: Commit changes
         run: |
           git add package-lock.json
-          git commit -m "chore: regenerate package-lock.json"
+          git commit -m "chore: update package-lock.json" || true
           git push 
