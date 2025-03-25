@@ -1,1 +1,0 @@
-import{_ as o}from"./ghHuJeTP.js";import{l as n,f as r,i as s,h as a,w as c,k as l,A as _}from"./B6fa0MjK.js";const i={};function d(f,e){const t=o;return l(),r("div",null,[e[1]||(e[1]=s("h1",null,"Home",-1)),a(t,{to:"/articles"},{default:c(()=>e[0]||(e[0]=[_("Articles")])),_:1})])}const x=n(i,[["render",d]]);export{x as default};
