@@ -29,6 +29,11 @@ jobs:
       - name: Reinstall dependencies
         run: npm install
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+
       - name: Commit changes
         run: |
           git add package-lock.json
