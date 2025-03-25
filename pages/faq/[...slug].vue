@@ -15,9 +15,11 @@ if (!page.value) {
     <NuxtLink to="/faq" class="flex items-center gap-2">
       <UIcon name="material-symbols:arrow-left-alt-rounded" class="size-5" /> <span class="text-sm">Retour</span>
     </NuxtLink>
-    <ContentRenderer
-      v-if="page"
-      :value="page"
-    />
+    <div class="prose prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600">
+      <ContentRenderer
+        v-if="page"
+        :value="page"
+      />
+    </div>
   </div>
 </template>
