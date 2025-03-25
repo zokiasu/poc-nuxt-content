@@ -11,7 +11,17 @@ export default defineNuxtConfig({
     markdown: {
       remarkPlugins: [],
       rehypePlugins: [],
+      components: {
+        'dropdown-simple': '~/components/content/DropdownSimple.vue',
+        'dropdown-avance': '~/components/content/DropdownAvance.vue',
+        'dropdown-multiple': '~/components/content/DropdownMultiple.vue'
+      }
     },
+  },
+
+  ui: {
+    global: true,
+    icons: ['heroicons', 'material-symbols', 'logos']
   },
 
   devtools: { enabled: true },
