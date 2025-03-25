@@ -1,0 +1,1 @@
+import{j as o,c as s,i as r,a1 as t}from"./CH5oUIaL.js";const n={};function a(e,c){return r(),s("tbody",null,[t(e.$slots,"default")])}const _=Object.assign(o(n,[["render",a]]),{__name:"ProseTbody"});export{_ as default};
