@@ -24,6 +24,17 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'material-symbols', 'logos']
   },
 
+  components: {
+    dirs: [
+      {
+        path: '~/components/content',
+        prefix: 'Content',
+        pathPrefix: false,
+        global: true
+      }
+    ]
+  },
+
   devtools: { enabled: true },
 
   vite: {
