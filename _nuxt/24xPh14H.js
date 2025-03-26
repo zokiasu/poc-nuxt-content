@@ -1,1 +1,0 @@
-import{j as o,c as s,i as r,a1 as c}from"./CH5oUIaL.js";const n={};function t(e,a){return r(),s("code",null,[c(e.$slots,"default")])}const _=Object.assign(o(n,[["render",t]]),{__name:"ProseCode"});export{_ as default};
