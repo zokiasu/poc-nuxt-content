@@ -17,7 +17,9 @@ Pour passer une commande sur notre site, suivez ces étapes simples :
 ## Questions fréquentes sur les commandes
 
 ### Puis-je modifier ma commande ?
+
 Oui, vous pouvez modifier votre commande tant qu'elle n'est pas expédiée.
 
 ### Quel délai de livraison ?
-Le délai de livraison varie entre 2 et 5 jours ouvrés. 
+
+Le délai de livraison varie entre 2 et 5 jours ouvrés.

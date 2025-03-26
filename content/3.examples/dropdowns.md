@@ -9,15 +9,15 @@ Voici différents exemples de dropdowns que vous pouvez utiliser dans votre cont
 
 ## Dropdown Simple
 
-::ContentDropdownSimple
+::content-dropdown-simple
 ::
 
 ## Dropdown Avancé avec Recherche
 
-::ContentDropdownAvance
+::content-dropdown-avance
 ::
 
 ## Dropdown à Sélection Multiple
 
-::ContentDropdownMultiple
-:: 
+::content-dropdown-multiple
+::
