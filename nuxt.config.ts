@@ -8,7 +8,11 @@ export default defineNuxtConfig({
 
   components: true,
 
-  content: {},
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    }
+  },
 
   devtools: { enabled: true },
 
