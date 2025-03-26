@@ -9,7 +9,7 @@
     />
 
     <template #content>
-      <ContentSlot name="content" />
+      <slot name="content" />
     </template>
   </UCollapsible>
 </template>
