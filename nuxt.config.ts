@@ -6,27 +6,9 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  content: {
-    markdown: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-    },
-  },
+  components: true,
 
-  ui: {
-    icons: ['heroicons', 'material-symbols', 'logos']
-  },
-
-  components: {
-    dirs: [
-      {
-        path: '~/components/content',
-        prefix: 'Content',
-        pathPrefix: false,
-        global: true
-      }
-    ]
-  },
+  content: {},
 
   devtools: { enabled: true },
 
